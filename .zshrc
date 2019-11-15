@@ -49,15 +49,11 @@ alias vim=nvim
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-## r2rice - dot file tracker
-alias r2rice='/usr/bin/git --git-dir=$HOME/r2rice/ --work-tree=$HOME'
-alias r2t='r2rice log --oneline --all --graph --decorate'
-alias r2s='r2rice status'
-
+## dot file tracker alias - use as normal git command
+### eg dotconfig add file.file
+###    dotconfig commit -m "Add file.file"
+###    dotconfig push origin master
 alias dotconfig='/usr/bin/git --git-dir=$HOME/.arch-dotfile --work-tree=$HOME'
-
-## alias timer
-alias timer20="sh ~/utils/timer_20m.sh"
 
 ## Auto start TMUX -- https://wiki.archlinux.org/index.php/Tmux#Start_tmux_on_every_shell_login
 if [[ $DISPLAY ]]; then
