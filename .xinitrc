@@ -13,9 +13,9 @@ xset r rate 350 40
 # xinput set-prop 12 320 1  # trackpoint
 
 # touchpad mouse settings - synaptics move speed (min, max, accel, ignored) 
-xinput set-prop 11 312 1.0 2.0 0.7 0.0
+xinput set-prop 12 316 1.0 2.0 0.7 0.0
 # trackpad movement sensitivity - libinput accel speed (scaler)
-xinput set-prop 12 347 0.8
+xinput set-prop 13 351 0.8
 
 ## enable tap to click
 # exec xinput set-prop 11 285 0 &
