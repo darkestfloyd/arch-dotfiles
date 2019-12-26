@@ -2,7 +2,7 @@
 ## Script to toggle tap to click on touchpad
 ## Uses xinput, config is reset at reboot to default
 
-device="SynPS/2 Synaptics TouchPad"  # device name for touchpad
+device="Synaptics TM3289-021"  # device name for touchpad
 prop="Synaptics Tap Action"  # property name to modify
 
 # get current value of Tap Button 1
