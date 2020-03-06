@@ -1,5 +1,5 @@
 # X hidpi
-Xft.dpi: 210
+Xft.dpi: 192
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
@@ -8,4 +8,4 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 # rofi hidpi
-rofi.dpi: 210
+rofi.dpi: 192

@@ -1,4 +1,4 @@
-xrandr --dpi 210
+xrandr --dpi 192
 
 ## Keyboard rate
 xset r rate 350 40 
@@ -15,7 +15,7 @@ xset r rate 350 40
 # touchpad mouse settings - synaptics move speed (min, max, accel, ignored) 
 xinput set-prop "Synaptics TM3289-021" "Synaptics Move Speed" 1.0 2.0 1.0 0.0
 # trackpad movement sensitivity - libinput accel speed (scaler)
-xinput set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.8
+xinput set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.9
 
 ## enable tap to click
 # exec xinput set-prop 11 285 0 &
