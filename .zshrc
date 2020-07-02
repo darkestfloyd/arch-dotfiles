@@ -1,5 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/nischal/.oh-my-zsh"
@@ -49,6 +48,9 @@ alias vim=nvim
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+## R use R3.6
+# alias rstudio="export RSTUDIO_WHICH_R=/home/nischal/anaconda3/envs/r_env/bin/R rstudio-bin &"
+
 ## dot file tracker alias - use as normal git command
 ### eg dotconfig add file.file
 ###    dotconfig commit -m "Add file.file"
@@ -61,6 +63,53 @@ if [[ $DISPLAY ]]; then
     [[ $- != *i* ]] && return
     [[ -z "$TMUX" ]] && exec tmux
 fi
+
+# Turn on vi mode
+# Source: https://unix.stackexchange.com/questions/547/make-my-zsh-prompt-show-mode-in-vi-mode/327572#327572
+# vim mode config
+# ---------------
+
+# Activate vim mode.
+bindkey -v
+
+# Remove mode switching delay.
+KEYTIMEOUT=5
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
+
+# Use beam shape cursor on startup.
+echo -ne '\e[5 q'
+
+# Use beam shape cursor for each new prompt.
+preexec() {
+   echo -ne '\e[5 q'
+}
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# open command in vim using ctrl+e
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+# end vi mode
 
 # <<< conda init <<<
 # added by Anaconda3 2018.12 installer
