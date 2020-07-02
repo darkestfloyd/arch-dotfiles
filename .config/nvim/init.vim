@@ -2,7 +2,7 @@ set path+=**
 set number
 set relativenumber
 set termguicolors
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 inoremap jk <Esc>
 
 " PlugInstall after installing vim plugged
