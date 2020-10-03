@@ -1,7 +1,10 @@
-xrandr --dpi 192
+# xrandr --dpi 192
 
 ## Keyboard rate
 xset r rate 350 40 
+
+## map caps to escape
+setxkbmap -option caps:escape
 
 ## TouchPad acceleration 
 ## use `xinput list` to get id, and 

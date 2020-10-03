@@ -149,7 +149,7 @@ set $urgent-bg-color     #E53935
 set $indicator_color	 #5d99f7
 
 # dmenu / rofi
-bindsym $mod+space exec "rofi -show run -lines 5 -modi window,run"
+bindsym $mod+d exec "rofi -show run -lines 5 -modi window,run"
 
 # browser shortcut
 bindsym $mod+x exec "brave"
