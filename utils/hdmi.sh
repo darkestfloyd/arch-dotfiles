@@ -1,4 +1,2 @@
-#!/bin/bash
-
-xrandr --output HDMI1 --auto
-xrandr --output eDPI1 --off
+xrandr --output HDMI1 --mode 1920x1080 --scale 1.3
+xrandr --output eDP1 --off
