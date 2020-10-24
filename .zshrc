@@ -61,7 +61,7 @@ alias dotconfig='/usr/bin/git --git-dir=$HOME/.arch-dotfile --work-tree=$HOME'
 if [[ $DISPLAY ]]; then
     # If not running interactively, do not do anything
     [[ $- != *i* ]] && return
-    [[ -z "$TMUX" ]] && exec tmux
+    [[ -z "$TMUX" ]] && exec tmux new-session -A -s general
 fi
 
 # Turn on vi mode
