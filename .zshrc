@@ -48,8 +48,11 @@ alias vim=nvim
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# alias rm to avoid removing files by mistake
+alias rm='rm -i'
+
 ## R use R3.6
-# alias rstudio="export RSTUDIO_WHICH_R=/home/nischal/anaconda3/envs/r_env/bin/R rstudio-bin &"
+alias export_rstudio_env="export RSTUDIO_WHICH_R=/home/nischal/anaconda3/envs/r_env/bin/R"
 
 ## dot file tracker alias - use as normal git command
 ### eg dotconfig add file.file
