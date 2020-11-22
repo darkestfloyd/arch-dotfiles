@@ -28,7 +28,7 @@ xinput set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.9
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources 
 
 # start dunst
-# exec /usr/bin/dunst &
+exec /usr/bin/dunst &
 
 # FOR I3
 exec i3
