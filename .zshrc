@@ -52,7 +52,7 @@ export EDITOR="$VISUAL"
 alias rm='rm -i'
 
 ## R use R3.6
-alias export_rstudio_env="export RSTUDIO_WHICH_R=/home/nischal/anaconda3/envs/r_env/bin/R"
+#alias export_rstudio_env="export RSTUDIO_WHICH_R=/home/nischal/anaconda3/envs/r_env/bin/R"
 
 ## dot file tracker alias - use as normal git command
 ### eg dotconfig add file.file
@@ -118,16 +118,16 @@ fi
 # added by Anaconda3 2018.12 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/nischal/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/nischal/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/nischal/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/nischal/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$(CONDA_REPORT_ERRORS=false '/home/nischal/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     \eval "$__conda_setup"
+# else
+#     if [ -f "/home/nischal/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/home/nischal/anaconda3/etc/profile.d/conda.sh"
+#         CONDA_CHANGEPS1=false conda activate base
+#     else
+#         \export PATH="/home/nischal/anaconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
 # <<< conda init <<<

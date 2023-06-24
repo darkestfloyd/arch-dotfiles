@@ -1,7 +1,7 @@
 # xrandr --dpi 192
 
 ## Keyboard rate
-xset r rate 350 40 
+xset r rate 300 50 
 
 ## map caps to escape
 setxkbmap -option caps:escape

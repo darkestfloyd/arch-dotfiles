@@ -11,6 +11,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
+Plug 'jpalardy/vim-slime'
 " Plug 'scrooloose/nerdtree'
 " Plug 'jalvesaq/Nvim-R'
 " Plug 'Shougo/deoplete.nvim'
@@ -41,3 +42,14 @@ nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 nnoremap <C-j> :tabnew<CR>
 inoremap <C-j> <Esc> :tabnew<CR>
+
+" _ also separates words
+set iskeyword-=_
+
+" vim-slime
+" # set output to tmux
+let g:slime_target = "tmux"
+" fix for tmux>2.2
+let g:slime_paste_file = expand("$HOME/.slime_paste")
+" or maybe...
+let g:slime_paste_file = tempname()
